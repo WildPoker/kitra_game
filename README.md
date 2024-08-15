@@ -31,11 +31,10 @@ cd kitra_game
 ### 2. Install Dependencis:
 
 ```bash
-git clone https://github.com/WildPoker/kitra_game.git
-cd kitra_game
+npm install
 ```
 
-### 3. Install Dependencis:
+### 3. Create ENV:
 
 Create a .env file in the root directory and configure the following variables:
 
