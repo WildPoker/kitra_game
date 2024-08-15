@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
-    "setup-db": "node src/config/createDatabase.js && sequelize db:migrate --config src/config/config.js && sequelize db:seed --seed initial-seed.js --config src/config/config.js"
+    "setup-db": "node src/config/createDatabase.js && npx sequelize db:migrate --config src/config/config.js && npx sequelize db:seed --seed initial-seed.js --config src/config/config.js"
   },
   "sequelize": {
     "config": "config/config.js"
@@ -28,5 +28,8 @@
     "mysql2": "^3.11.0",
     "sequelize": "^6.37.3",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
   }
 }
