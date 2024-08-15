@@ -83,6 +83,8 @@ The documentation is generated from the README.md file and can be viewed by acce
 
 ## Example Requests
 
+_POSTMAN API DOCS LINK_: https://documenter.getpostman.com/view/13262179/2sA3s6GqM3
+
 ### 1. Find Treasure:
 
 ```bash
