@@ -68,11 +68,11 @@ npm run start
 
 The server will start on http://localhost:5000. You can access the following endpoints:
 
-- _GET /api/treasure?latitude=14.55&longitude=121.02&distance=10&prize_value=15_
+- _GET /app/treasure?latitude=14.55&longitude=121.02&distance=10&prize_value=15_
   - GET Find treasures within a 10 km radius of the specified coordinates with a minimum prize value of $15.
-- _GET /api/user/progress (Requires Authentication)_
+- _GET /app/user/progress (Requires Authentication)_
   - View the user's progression, including the number of treasures found and the total money collected.
-- _POST /api/login_
+- _POST /app/login_
   - Authenticate a user and receive a JWT token.
 - _GET /documentation_
   - View the project documentation.
@@ -88,13 +88,13 @@ _POSTMAN API DOCS LINK_: https://documenter.getpostman.com/view/13262179/2sA3s6G
 ### 1. Find Treasure:
 
 ```bash
-GET /api/treasure?latitude=14.55&longitude=121.02&distance=10&prize_value=15
+GET /app/treasure?latitude=14.55&longitude=121.02&distance=10&prize_value=15
 ```
 
 ### 2. User Login:
 
 ```bash
-POST /api/login
+POST /app/login
 Content-Type: application/json
 
 {
@@ -107,7 +107,7 @@ Content-Type: application/json
 ### 3. User Progression:
 
 ```bash
-GET /api/user/progress
+GET /app/user/progress
 Authorization: Bearer your-jwt-token-here
 ```
 
